@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body action="/show/">
+    {% for img in images %}
+        <img src="data:image/jpg;base64, {{img.data}}" >
+    {% endfor %}
+</body>
+</html>
